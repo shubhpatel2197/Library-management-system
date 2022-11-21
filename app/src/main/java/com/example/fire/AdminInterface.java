@@ -52,7 +52,7 @@ public class AdminInterface extends AppCompatActivity {
         ABook.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent imnt = new Intent(AdminInterface.this,ABook.class);
+                Intent imnt = new Intent(AdminInterface.this,SearchAdmin.class);
 
 //                String nameText = UCode.getText().toString();
                 imnt.putExtra(EXTRA_MASS, name);

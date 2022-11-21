@@ -72,7 +72,7 @@ public class login extends AppCompatActivity {
             @Override
             public void onSuccess(AuthResult authResult) {
 //                FirebaseUser user = authResult.getUser();
-
+//                System.out.println("THIS IS FOR COMMIT");
                 checkUserAcesslevel(authResult.getUser().getUid());
                 
             }

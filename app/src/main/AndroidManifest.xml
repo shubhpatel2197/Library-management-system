@@ -14,6 +14,12 @@
         android:theme="@style/Theme.Fire"
         tools:targetApi="31">
         <activity
+            android:name=".SearchUser"
+            android:exported="false" />
+        <activity
+            android:name=".SearchAdmin"
+            android:exported="false" />
+        <activity
             android:name=".ABook"
             android:exported="false" />
         <activity

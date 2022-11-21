@@ -26,7 +26,7 @@ public class UserInterface extends AppCompatActivity {
         bookAV.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent im = new Intent(UserInterface.this,next2.class);
+                Intent im = new Intent(UserInterface.this,SearchUser.class);
 
 //                String nameText = UCode.getText().toString();
                 im.putExtra(EXTRA_PASS, finalName);
