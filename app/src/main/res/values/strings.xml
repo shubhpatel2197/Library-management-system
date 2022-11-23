@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">LMS</string>
+    <string name="login_for_admin">Login for Admin</string>
+    <string name="lms">LMS</string>
+    <string name="todo">TODO</string>
+    <string name="login_for_user">Login for User</string>
 </resources>

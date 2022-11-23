@@ -4,43 +4,73 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#CDDC39"
+    android:background="#5BAC64"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="379dp"
-        android:layout_height="86dp"
-        android:background="#4CAF50"
-        android:gravity="center"
-        android:text="LMS"
-        android:textColor="#F10A0A"
-        android:textSize="60sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="300dp"
+        android:contentDescription="@string/todo"
+        android:scaleType="centerCrop"
+        android:textAlignment="viewStart"
+        app:barrierAllowsGoneWidgets="false"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.068"
-        tools:ignore="TextContrastCheck" />
+        app:srcCompat="@drawable/bookgreen"
+        tools:ignore="ContentDescription" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/login"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="207dp"
+        android:layout_height="72dp"
         android:layout_marginBottom="248dp"
-        android:text="Login for Admin"
+        android:background="@drawable/sss"
+        android:backgroundTint="#87C366"
+        android:text="@string/login_for_admin"
+        android:textSize="16sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <Button
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="522dp"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/rounded_corner_view"
+        android:fontFamily="@font/ubuntu_medium"
+        android:gravity="center_horizontal|top"
+        android:text="@string/lms"
+        android:textColor="#050404"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="TextContrastCheck" />
+
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="376dp"
-        android:text="Login for User"
+        android:layout_width="207dp"
+        android:layout_height="72dp"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/sss"
+        android:backgroundTint="#87C366"
+        android:fontFamily="@font/ubuntu_medium"
+
+        android:text="@string/login_for_user"
+        android:textColor="@android:color/black"
+        android:textColorHighlight="#511E1E"
+        android:textSize="16sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
