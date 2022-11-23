@@ -43,6 +43,7 @@
         android:layout_height="522dp"
         android:layout_marginTop="150dp"
         android:background="@drawable/rounded_corner_view"
+
         android:fontFamily="@font/ubuntu_medium"
         android:gravity="center_horizontal|top"
         android:text="@string/lms"
@@ -64,8 +65,9 @@
         android:layout_marginBottom="100dp"
         android:background="@drawable/sss"
         android:backgroundTint="#87C366"
+        android:elevation="10dp"
         android:fontFamily="@font/ubuntu_medium"
-
+        android:shadowDx="10"
         android:text="@string/login_for_user"
         android:textColor="@android:color/black"
         android:textColorHighlight="#511E1E"
@@ -73,6 +75,7 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
