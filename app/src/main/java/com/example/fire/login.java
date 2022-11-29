@@ -28,6 +28,7 @@ import com.google.firebase.firestore.FirebaseFirestoreException;
 
 public class login extends AppCompatActivity {
     private EditText email2;
+    //hi
     private EditText password2;
     private EditText UCode;
     private TextView textView10;
