@@ -30,7 +30,7 @@ public class fragment_home extends Fragment {
      */
     public fragment_home() {
     }
-
+///
     // TODO: Customize parameter initialization
     @SuppressWarnings("unused")
     public static fragment_home newInstance(int columnCount) {
