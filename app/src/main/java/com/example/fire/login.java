@@ -26,6 +26,8 @@ import com.google.firebase.firestore.EventListener;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.FirebaseFirestoreException;
 
+
+
 public class login extends AppCompatActivity {
     private EditText email2;
     //hi
@@ -93,7 +95,7 @@ public class login extends AppCompatActivity {
             public void onSuccess(DocumentSnapshot documentSnapshot) {
 //                if(documentSnapshot.getString("Admin") == "0") {
                     Toast.makeText(login.this, "Login Sucessfull", Toast.LENGTH_SHORT).show();
-                    Intent intent = new Intent(login.this, UserInterface.class);
+                    Intent intent = new Intent(login.this, MainActivity2.class);
 
                     String nameText = UCode.getText().toString();
                     intent.putExtra(EXTRA_NAME, nameText);

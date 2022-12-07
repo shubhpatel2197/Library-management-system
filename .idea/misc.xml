@@ -3,6 +3,24 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/My Android Projects/Firebase/Library-management-system_1/app/src/main/res/layout/activity_issue_user.xml" value="0.12" />
+        <entry key="..\:/My Android Projects/Firebase/Library-management-system_1/app/src/main/res/layout/activity_login.xml" value="0.12" />
+        <entry key="..\:/My Android Projects/Firebase/Library-management-system_1/app/src/main/res/layout/activity_login_admin.xml" value="0.1" />
+        <entry key="..\:/My Android Projects/Firebase/Library-management-system_1/app/src/main/res/layout/activity_main.xml" value="0.10236486486486486" />
+        <entry key="..\:/My Android Projects/Firebase/Library-management-system_1/app/src/main/res/layout/activity_next.xml" value="0.10236486486486486" />
+        <entry key="..\:/My Android Projects/Firebase/Library-management-system_1/app/src/main/res/layout/activity_search_admin.xml" value="0.1014344262295082" />
+        <entry key="..\:/My Android Projects/Firebase/Library-management-system_1/app/src/main/res/layout/activity_search_user.xml" value="0.1" />
+        <entry key="..\:/My Android Projects/Firebase/Library-management-system_1/app/src/main/res/layout/app_bar_main.xml" value="0.1014344262295082" />
+        <entry key="..\:/My Android Projects/Firebase/Library-management-system_1/app/src/main/res/layout/content_main.xml" value="0.10236486486486486" />
+        <entry key="..\:/My Android Projects/Firebase/Library-management-system_1/app/src/main/res/layout/fragment__about.xml" value="0.1014344262295082" />
+        <entry key="..\:/My Android Projects/Firebase/Library-management-system_1/app/src/main/res/layout/fragment__contact_us.xml" value="0.1014344262295082" />
+        <entry key="..\:/My Android Projects/Firebase/Library-management-system_1/app/src/main/res/layout/fragment_home.xml" value="0.1014344262295082" />
+        <entry key="..\:/My Android Projects/Firebase/Library-management-system_1/app/src/main/res/layout/fragment_home_list.xml" value="0.1" />
+        <entry key="..\:/My Android Projects/Firebase/Library-management-system_1/app/src/main/res/layout/fragment_magazine_list.xml" value="0.1" />
+        <entry key="..\:/My Android Projects/Firebase/Library-management-system_1/app/src/main/res/layout/fragment_newspaper_list.xml" value="0.1" />
+        <entry key="..\:/My Android Projects/Firebase/Library-management-system_1/app/src/main/res/layout/fragment_wishlist_list.xml" value="0.1" />
+        <entry key="..\:/My Android Projects/Firebase/Library-management-system_1/app/src/main/res/layout/nav_header_main.xml" value="0.1014344262295082" />
+        <entry key="..\:/My Android Projects/Firebase/Library-management-system_1/app/src/main/res/menu/activity_main_drawer.xml" value="0.10236486486486486" />
         <entry key="..\:/My Android Projects/Firebase/fire/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.1" />
         <entry key="..\:/My Android Projects/Firebase/fire/app/src/main/res/layout/activity_abook.xml" value="0.14375" />
         <entry key="..\:/My Android Projects/Firebase/fire/app/src/main/res/layout/activity_add_book.xml" value="0.16666666666666666" />
