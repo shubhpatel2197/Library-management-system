@@ -5,7 +5,9 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.SearchView;
 import android.widget.Toast;
@@ -22,7 +24,9 @@ import java.util.List;
 public class SearchUser extends AppCompatActivity {
     private ListView list1;
     private SearchView SV;
+    private Button acidity;
     private List<String> namelist=new ArrayList<>();
+    private List<String> searchlist=new ArrayList<>();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -48,12 +52,51 @@ public class SearchUser extends AppCompatActivity {
             }
         });
 
+//        acidity = findViewById(R.id.acidity);
+//        acidity.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                FirebaseFirestore.getInstance().collection("Admins").document(name).collection("Books").addSnapshotListener(new EventListener<QuerySnapshot>() {
+//                    @Override
+//                    public void onEvent(@Nullable QuerySnapshot value, @Nullable FirebaseFirestoreException error) {
+//
+//                        for(DocumentSnapshot s: value){
+//                            searchlist.add("\n"+"Book ID: "+s.getString("bookID")+"\n"+"Name of the Book: "+s.getString("nameOfBook")+"\n"+"Name of the Author: "+s.getString("nameOfAuthor")+"\n"+"Book Description: "+s.getString("bookDescription")+"\n");
+//                        }
+//
+//
+//                    }
+//                });
+//
+//                SV.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+//                    @Override
+//                    public boolean onQueryTextSubmit(String query) {
+//
+//                        if(searchlist.contains(query)){
+//                            adapter.getFilter().filter(query);
+//                            list1.setAdapter(adapter);
+//                        }else{
+//                            Toast.makeText(SearchUser.this, "No Match found", Toast.LENGTH_LONG).show();
+//                        }
+//                        return false;
+//                    }
+//
+//                    @Override
+//                    public boolean onQueryTextChange(String newText) {
+////                    adapter.getFilter().filter(newText);
+//                        return false;
+//                    }
+//                });
+//            }
+//        });
+
         SV.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
             public boolean onQueryTextSubmit(String query) {
 
                 if(namelist.contains(query)){
                     adapter.getFilter().filter(query);
+                    list1.setAdapter(adapter);
                 }else{
                     Toast.makeText(SearchUser.this, "No Match found", Toast.LENGTH_LONG).show();
                 }

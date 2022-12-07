@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.fire.fragment_home"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home_list" />
+
+    <fragment
+        android:id="@+id/nav_magazine"
+        android:name="com.example.fire.fragment_magazine"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_magazine_list" />
+
+    <fragment
+        android:id="@+id/nav_Newspaper"
+        android:name="com.example.fire.fragment_newspaper"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_newspaper_list" />
+
+    <fragment
+        android:id="@+id/nav_wishlist"
+        android:name="com.example.fire.fragment_wishlist"
+        android:label="Inbox"
+        tools:layout="@layout/fragment_wishlist_list" />
+
+</navigation>
