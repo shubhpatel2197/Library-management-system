@@ -4,44 +4,36 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFC107"
     tools:context=".SearchUser">
 
-    <ListView
-        android:id="@+id/list1"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-
-        android:divider="#ad5"
-        android:dividerHeight="2dp"
-        android:paddingLeft="20dp"
+    <RelativeLayout
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:paddingLeft="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/acidity"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <Button
-        android:id="@+id/acidity"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/SV"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <SearchView
-        android:id="@+id/SV"
-        android:layout_width="232dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:iconifiedByDefault="false"
-        android:queryHint="Search Here"
-        app:layout_constraintEnd_toStartOf="@+id/acidity"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
+
+        <SearchView
+            android:id="@+id/SV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:iconifiedByDefault="false"
+            android:queryHint="Search Here" />
+
+        <ListView
+            android:id="@+id/list1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/SV"
+
+            android:divider="#ad5"
+            android:dividerHeight="2dp"
+            android:paddingLeft="20dp" />
+    </RelativeLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
