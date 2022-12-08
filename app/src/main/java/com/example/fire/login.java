@@ -1,10 +1,7 @@
 package com.example.fire;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
@@ -13,18 +10,16 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.google.android.gms.tasks.OnCompleteListener;
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
-import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
-import com.google.firebase.firestore.EventListener;
 import com.google.firebase.firestore.FirebaseFirestore;
-import com.google.firebase.firestore.FirebaseFirestoreException;
 
 
 
@@ -38,6 +33,8 @@ public class login extends AppCompatActivity {
     private Button login1;
     private FirebaseAuth auth;
     private FirebaseFirestore fStore;
+    SharedPreferences sharedPreferences;
+    public static final String filename="login";
     public static final String EXTRA_NAME = "com.example.fire.extra.name";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,6 +49,7 @@ public class login extends AppCompatActivity {
                 startActivity(new Intent(login.this, register.class));
             }
         });
+
         password2 = findViewById(R.id.password2);
         login1 = findViewById(R.id.login1);
         auth = FirebaseAuth.getInstance();

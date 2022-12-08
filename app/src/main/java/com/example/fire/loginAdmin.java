@@ -1,8 +1,5 @@
 package com.example.fire;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -11,6 +8,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -36,7 +36,7 @@ public class loginAdmin extends AppCompatActivity {
         AEmail = findViewById(R.id.AEmail);
         ACode = findViewById(R.id.ACode);
         APassword = findViewById(R.id.APassword);
-        ALogin = findViewById(R.id.ALogin);
+        ALogin = findViewById(R.id.login2);
         textView9 = findViewById(R.id.textView9);
         textView9.setOnClickListener(new View.OnClickListener() {
             @Override
