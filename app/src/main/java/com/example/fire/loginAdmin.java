@@ -36,7 +36,7 @@ public class loginAdmin extends AppCompatActivity {
         AEmail = findViewById(R.id.AEmail);
         ACode = findViewById(R.id.ACode);
         APassword = findViewById(R.id.APassword);
-        ALogin = findViewById(R.id.login2);
+        ALogin = findViewById(R.id.button3);
         textView9 = findViewById(R.id.textView9);
         textView9.setOnClickListener(new View.OnClickListener() {
             @Override

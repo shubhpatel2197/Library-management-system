@@ -23,9 +23,11 @@
         android:id="@+id/SV"
         android:layout_width="232dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="28dp"
         android:iconifiedByDefault="false"
         android:queryHint="Search for any Book by title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.418"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

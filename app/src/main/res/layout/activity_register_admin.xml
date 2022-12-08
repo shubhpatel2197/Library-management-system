@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#8BC34A"
+    android:background="@drawable/gradient_2"
     tools:context=".registerAdmin">
 
     <TextView
@@ -12,11 +12,10 @@
         android:layout_width="365dp"
         android:layout_height="110dp"
         android:layout_marginTop="32dp"
-        android:background="#FFEB3B"
         android:gravity="center"
         android:text="Registration for Admin"
-        android:textColor="#9C27B0"
-        android:textSize="48sp"
+        android:textColor="#6A2D2D"
+        android:textSize="35dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -86,12 +85,14 @@
 
     <Button
         android:id="@+id/AdminRegister"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="128dp"
+        android:layout_width="196dp"
+        android:layout_height="63dp"
+        android:layout_marginBottom="100dp"
+        android:backgroundTint="#6A2D2D"
         android:text="Register"
+        app:cornerRadius="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

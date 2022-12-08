@@ -66,6 +66,8 @@ public class login extends AppCompatActivity {
                     regis(email1, password1);
                 }
             }
+
+
         });
     }
 
