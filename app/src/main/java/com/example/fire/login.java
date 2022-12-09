@@ -95,7 +95,7 @@ public class login extends AppCompatActivity {
             public void onSuccess(DocumentSnapshot documentSnapshot) {
 //                if(documentSnapshot.getString("Admin") == "0") {
                     Toast.makeText(login.this, "Login Sucessfull", Toast.LENGTH_SHORT).show();
-                    Intent intent = new Intent(login.this, MainActivity2.class);
+                    Intent intent = new Intent(login.this, UserInterface.class);
 
                     String nameText = UCode.getText().toString();
                     intent.putExtra(EXTRA_NAME, nameText);

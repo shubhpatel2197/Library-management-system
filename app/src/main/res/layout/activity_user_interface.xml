@@ -4,17 +4,35 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#8BC34A"
+    android:background="@drawable/gradient_2"
+    android:outlineAmbientShadowColor="#AE4A4A"
+    android:outlineSpotShadowColor="#914949"
     tools:context=".UserInterface">
 
     <Button
         android:id="@+id/bookAV"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="292dp"
+        android:layout_height="61dp"
+        android:backgroundTint="#681414"
         android:text="Books Available for Issue"
+        app:cornerRadius="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.333" />
+
+    <Button
+        android:id="@+id/UIssue"
+        android:layout_width="196dp"
+        android:layout_height="64dp"
+        android:backgroundTint="#681414"
+        android:text="Issue"
+        app:cornerRadius="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/bookAV"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.529"
+        app:strokeColor="#E48181" />
 </androidx.constraintlayout.widget.ConstraintLayout>
